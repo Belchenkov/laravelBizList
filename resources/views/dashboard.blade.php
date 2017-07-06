@@ -8,7 +8,20 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <h3>Your Listings</h3>
+                    @if(count($listings))
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Company</th>
+                                <th></th>
+                            </tr>
+                            @foreach($listings as $listing)
+                                <tr>
+                                    <td>{{$listing->name}}</td>
+                                </tr>
+                            @endforeach
+                        </table>
+                    @endif
                 </div>
             </div>
         </div>
