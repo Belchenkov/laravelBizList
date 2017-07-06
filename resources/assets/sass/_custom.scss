@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+nav.navbar.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse {
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: #eee;
+}
+
+.content {
+     flex: 1;
+}
+
+#btn-edit {
+    float: left;
+}
+
+#btn-delete {
+    float: right;
+}
+
+
+#footer {
+    color: #fff;
+    background: #333;
+    margin-top: 30px;
+
+    p {
+        padding: 20px 0 0 10px;
+    }
+}
