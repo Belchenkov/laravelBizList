@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700|Permanent+Marker');
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
 .wrapper {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive!important;
+    font-size: 180%!important;
+    text-shadow: 0 0 3px #fff;
 }
 
 nav.navbar.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse {
@@ -14,6 +26,14 @@ nav.navbar.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse {
 
 .content {
      flex: 1;
+}
+
+.panel-heading h3 {
+    font-family: 'Exo', sans-serif;
+    text-shadow: 0 0 3px #fff;
+}
+.header-above-form {
+    text-transform: uppercase;    
 }
 
 #btn-edit {

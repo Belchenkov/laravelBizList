@@ -71,7 +71,14 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container">
+
+            {{-- Messages--}}
+            @include('inc.messages')
+
+            @yield('content')
+        </div>
+
     </div>
 
     <!-- Scripts -->

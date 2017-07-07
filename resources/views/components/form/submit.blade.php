@@ -1,3 +1,3 @@
-<div class="">
+<div>
     {{ Form::submit($value, $attributes) }}
 </div>
