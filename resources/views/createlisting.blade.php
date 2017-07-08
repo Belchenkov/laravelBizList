@@ -10,13 +10,13 @@
 
                 <div class="panel-body">
                     {!! Form::open(['action' => 'ListingsController@store', 'method'=>'POST']) !!}
-                    {{ Form::bsText('name', '', ['placeholder' => 'Company Name ...']) }}
-                    {{ Form::bsText('email', '', ['placeholder' => 'Company Email ...']) }}
-                    {{ Form::bsText('website', '', ['placeholder' => 'Company Website ...']) }}
-                    {{ Form::bsText('phone', '', ['placeholder' => 'Company Phone ...']) }}
-                    {{ Form::bsText('address', '', ['placeholder' => 'Company Address ...']) }}
-                    {{ Form::bsTextArea('bio', '', ['placeholder' => 'About this Business ...']) }}
-                    {{ Form::bsSubmit('submit', '', ['class' => 'btn btn-default']) }}
+                        {{ Form::bsText('name', '', ['placeholder' => 'Company Name ...']) }}
+                        {{ Form::bsText('email', '', ['placeholder' => 'Company Email ...']) }}
+                        {{ Form::bsText('website', '', ['placeholder' => 'Company Website ...']) }}
+                        {{ Form::bsText('phone', '', ['placeholder' => 'Company Phone ...']) }}
+                        {{ Form::bsText('address', '', ['placeholder' => 'Company Address ...']) }}
+                        {{ Form::bsTextArea('bio', '', ['placeholder' => 'About this Business ...']) }}
+                        {{ Form::bsSubmit('submit', '', ['class' => 'btn btn-default']) }}
                     {!! Form::close() !!}
                 </div>
             </div>
