@@ -75,7 +75,9 @@ class ListingsController extends Controller
      */
     public function edit($id)
     {
-        //
+       $listing = Listing::find($id);
+
+       return view('editlisting')->with('listing', $listing);
     }
 
     /**
@@ -87,7 +89,19 @@ class ListingsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $listing = Listing::find($id);
+
+        $listing->name = $request->input('name');
+        $listing->email = $request->input('email');
+        $listing->website = $request->input('website');
+        $listing->phone = $request->input('phone');
+        $listing->address = $request->input('address');
+        $listing->bio = $request->input('bio');
+        $listing->user_id = auth()->user()->id;
+
+        $listing->save();
+
+        return redirect('/dashboard')->with('success', 'Listing Updated');
     }
 
     /**
